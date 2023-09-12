@@ -119,6 +119,7 @@ body {
 main {
   position: relative;
   padding-top: 80px;
+  overflow-x: hidden;
 }
 
 .no-poems {

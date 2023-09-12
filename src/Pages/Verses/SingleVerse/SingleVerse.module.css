@@ -22,7 +22,7 @@
   }
 
   .one {
-    z-index : 1000
+    z-index : 1000;
     transition: 0.5s;
     display: flex;
     flex-direction: column;

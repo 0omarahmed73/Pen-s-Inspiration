@@ -53,7 +53,7 @@ const AddVerse = () => {
     if (title.trim() && poet.trim() && options && body) {
       if (!image.trim()) {
         image =
-          "/src/assets/istockphoto-956998294-612x612-removebg-preview.png";
+          "https://i.imgur.com/Zxawy6l.png";
       }
       if (body.replace(/<(.|\n)*?>/g, "").trim().length === 0) {
         window.scrollTo({

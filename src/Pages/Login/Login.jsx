@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 
 const Login = () => {
-  const { signInHandler, signedIn } = useContext(AuthContext);
+  const { signInHandler, signedIn , onLoggin , setOnLoggin } = useContext(AuthContext);
   const navigate = useNavigate();
   useEffect(() => {
     if (signedIn) {
@@ -65,11 +65,12 @@ const Login = () => {
                 </Form.Group>
                 <div className="btnn w-100 text-center">
                   <Button
+                    disabled={onLoggin}
                     className="mt-2 w-50 mx-auto"
                     variant="outline-light"
                     type="submit"
                   >
-                    تسجيل الدخول
+                    {onLoggin ? 'جاري الدخول...' : "تسجيل الدخول"}
                   </Button>
                 </div>
               </Form>

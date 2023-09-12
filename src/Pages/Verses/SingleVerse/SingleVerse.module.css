@@ -1,5 +1,7 @@
 .verseOnly {
   background-color: var(--color2);
+  position : relative;
+  z-index : 1000
 
   & h1 {
     font-family: var(--headerFont);

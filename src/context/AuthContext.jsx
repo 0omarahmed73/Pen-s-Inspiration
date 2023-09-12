@@ -29,7 +29,10 @@ export const AuthProvider = ({ children }) => {
       .then(() => {
         setSignedIn(true);
       })
-      .catch((err) => toast.error('الرجاء التاكد من البريد الالكتروني وكلمة المرور'));
+      .catch((err) => {
+        toast.error('الرجاء التاكد من البريد الالكتروني وكلمة المرور')
+        setOnLoggin(false)
+      });
   };
   onAuthStateChanged(auth, (user) => {
     if (user) {

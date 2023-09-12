@@ -1,0 +1,11 @@
+.verses {
+  min-height: calc(100svh - 80px);
+  background-color: var(--color2);
+  & h1 {
+    font-family: var(--headerFont);
+    font-size: 50px;
+  }
+  & option {
+    width: fit-content;
+  }
+}

@@ -1,0 +1,24 @@
+.card {
+  transition: 0.5s;
+  &:hover {
+    scale: 1.05;
+    rotate: 3deg;
+  }
+  .img {
+    text-align: center;
+    overflow: hidden;
+    & img {
+      aspect-ratio: 1.5/1;
+      width: 200px;
+      object-fit: cover;
+    }
+  }
+  :global(.card) {
+    padding: 10px 20px;
+    box-shadow: 1px 3px 9px 5px #00000054;
+    text-align: start;
+  }
+  :global(.card-title) {
+    text-align: center;
+  }
+}

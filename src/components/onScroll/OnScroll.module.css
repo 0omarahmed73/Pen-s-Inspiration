@@ -1,0 +1,36 @@
+.onscroll {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #2d0f0f !important;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: 0.5s;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  & svg{
+    width: 30px;
+  }
+  &:hover {
+    background-color: #6e2727 !important;
+  }
+
+  &:active {
+    background-color: #3d1515 !important;
+  }
+
+  @media screen and (min-width : 768px) {
+    & {
+      height: 60px;
+      width: 60px;
+      & svg{
+        width: 50px;
+      }
+    }
+  }
+}

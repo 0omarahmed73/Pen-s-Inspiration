@@ -1,0 +1,102 @@
+.verseOnly {
+  background-color: var(--color2);
+
+  & h1 {
+    font-family: var(--headerFont);
+    margin-bottom: 20px;
+    padding-top: 30px;
+  }
+
+  & p {
+    font-size: 18px;
+  }
+
+  .poem {
+    line-height: 3.5;
+    font-size: 20px;
+
+    & * {
+      margin-bottom: 5px;
+    }
+  }
+
+  .one {
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color1);
+    color: white;
+    min-height: calc(100vh - 120.99px);
+    padding-top: 30px;
+    position: fixed;
+    bottom: 0;
+    top: 80px;
+    right: 0;
+    width: 230px;
+    & img {
+      max-width: 100%;
+      aspect-ratio: 1/1;
+      width: 150px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border-radius: 50%;
+    }
+  }
+
+  :global(.row) {
+    min-height: calc(100vh - 80.99px);
+  }
+
+}
+
+@media screen and (max-width : 768px) {
+  .show {
+    cursor: pointer;
+    position: absolute;
+    background-color: var(--color1);
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 70px;
+    transform: rotate(90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+
+    & svg {
+      rotate: 180deg;
+    }
+
+  }
+}
+
+@media screen and (max-width : 768px) {
+  .hide {
+    right: -230px !important;
+  }
+}
+.allPost {
+  position: relative;
+}
+.deletePost {
+  background-color: var(--color1);
+  padding: 10px;
+  position: absolute;
+  bottom: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  left: 20px;
+  &:hover {
+    background-color: #5d1e1e;
+  }
+  &:active {
+    background-color: #1d0909;
+  }
+  & svg {
+    color: white;
+  }
+}

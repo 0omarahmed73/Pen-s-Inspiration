@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+
+.defaultLayout {
+  & img {
+    width: 60px;
+  }
+
+  & h4 {
+    font-family: 'Rakkas', cursive;
+    margin: 4px 0 0 0;
+    color: white;
+  }
+
+  :global(.navbar) {
+    background-color: #2d0f0f !important;
+    transition: 0.3s;
+  }
+
+  & a {
+    font-weight: 600;
+    all: unset;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    color: rgb(195, 195, 195);
+
+    &:hover {
+      color: white;
+    }
+
+    :global(.active) {
+      color: white;
+    }
+  }
+
+  :global(.navbar-nav) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & a {
+      padding-block: 10px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.addVerse {
+  min-height: calc(100vh - 80px);
+  background-color: var(--color3);
+  color: white;
+  & h1 {
+    font-family: var(--headerFont);
+  }
+  & input {
+    padding: 8px 15px 8px 20px;
+    &::placeholder {
+      opacity: 0.7;
+      transition: 0.3s;
+    }
+    &:focus::placeholder {
+      opacity: 0;
+    }
+  }
+  :global(.ql-picker-options){
+    border-radius: 10px;
+  }
+  :global(.ql-container) {
+    min-height: 100px;
+  }
+  :global(.quill ) {
+    width: 100%;
+    & svg {
+      color: white;
+    }
+    * {
+      border-color: white;
+      
+    }
+  }
+:global(.ql-toolbar) {
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+}
+:global(.ql-editor) {
+  text-align: start;
+  & p {
+    min-height: 25px;
+  }
+}
+}

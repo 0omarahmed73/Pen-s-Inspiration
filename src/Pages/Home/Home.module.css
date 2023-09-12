@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+.home {
+  min-height: calc(100vh - 85.99px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #012c31;
+  .logo {
+    & img {
+      width: 200px;
+      @media screen and (min-width : 768px) {
+        & {
+          width: 300px;
+        }
+      }
+    }
+  }
+  .pen , .pen2 {
+    font-family: 'Rakkas', cursive; 
+    color: white; 
+  }
+  .pen {
+    font-size: 40px;
+    @media screen and (min-width : 768px) {
+      & {
+        font-size: 50px;
+      }
+    }
+  }
+  .pen2 {
+    font-size: 30px;
+    @media screen and (min-width : 768px) {
+      & {
+        font-size: 40px;
+      }
+    }
+  }
+}
+.p2 {
+  background-color: #282856;
+}
+.home2 {
+  min-height: calc(100vh - 85.99px); 
+  background-color: #282856;
+  .logo {
+    & img {
+      width: 300px;
+    }
+  }
+  .pen , .pen2 {
+    font-family: 'Rakkas', cursive; 
+    color: white; 
+  }
+  .pen {
+    font-size: 50px;
+  }
+  .pen2 {
+    font-size: 40px;
+  }
+}
+.p2 {
+  background-color: #282856;
+}

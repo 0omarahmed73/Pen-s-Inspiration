@@ -1,0 +1,19 @@
+.about_us {
+  min-height: calc(100vh - 80px);
+  background-color: var(--color2);
+  padding-top: 40px;
+  & h1 {
+    font-family: var(--headerFont);
+    font-size: 50px;
+  }
+  .img {
+    text-align: center;
+    & img {
+      border-radius: 50%;
+      aspect-ratio: 1/1;
+      width: 200px;
+      margin-bottom: 20px;
+      box-shadow: 0px 0px 5px 7px #00000025;
+    }
+  }
+}

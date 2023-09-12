@@ -10,12 +10,14 @@ import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 export const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
-  const [error , setError] = useState(false)
+  const [onLoggin , setOnLoggin] = useState(false)
+  const [error , setError] = useState(false);
   const [signedIn, setSignedIn] = useState(false);
   const [doneSigned , setDoneSigned] = useState(false)
   const { app } = useContext(FirebaseContext);
   const auth = getAuth(app);
   const signInHandler = (data) => {
+    setOnLoggin(true);
     setError(false)
     signInWithEmailAndPassword(auth, data.email, data.password)
       .then((userCredential) => {
@@ -56,7 +58,7 @@ export const AuthProvider = ({ children }) => {
       .catch((err) => console.log(err));
   };
   return (
-    <AuthContext.Provider value={{ doneSigned , setDoneSigned , error , setError , handleLogOut, signInHandler, signedIn }}>
+    <AuthContext.Provider value={{onLoggin , setOnLoggin , doneSigned , setDoneSigned , error , setError , handleLogOut, signInHandler, signedIn }}>
       {children}
     </AuthContext.Provider>
   );

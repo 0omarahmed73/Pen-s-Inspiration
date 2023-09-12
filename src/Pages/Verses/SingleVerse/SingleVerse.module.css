@@ -1,7 +1,6 @@
 .verseOnly {
   background-color: var(--color2);
-  position : relative;
-  z-index : 1000
+
 
   & h1 {
     font-family: var(--headerFont);
@@ -23,6 +22,7 @@
   }
 
   .one {
+    z-index : 1000
     transition: 0.5s;
     display: flex;
     flex-direction: column;
@@ -86,7 +86,7 @@
 .deletePost {
   background-color: var(--color1);
   padding: 10px;
-  position: absolute;
+  position: fixed;
   bottom: 20px;
   border-radius: 10px;
   transition: 0.3s;

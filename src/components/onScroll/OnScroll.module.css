@@ -1,9 +1,8 @@
 .onscroll {
-  z-index : 1500;
+  z-index: 1500 !important;
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 1000;
   background-color: #2d0f0f !important;
   height: 50px;
   width: 50px;
